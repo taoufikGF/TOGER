@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعية أسود توكر والماس</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('https://img.freepik.com/photos-gratuite/handprints_1101-346.jpg?uid=R139210298&ga=GA1.1.368700264.1727818766') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .club {
+            border-radius: 15px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .club:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .club:nth-child(1) { background: #ff5733; }
+        .club:nth-child(2) { background: #33c1ff; }
+        .club:nth-child(3) { background: #33ff57; }
+        .club:nth-child(4) { background: #f4c542; }
+        .club:nth-child(5) { background: #8a42f4; }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        /* تصميم كاردات الأعضاء */
+        .members {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+
+        .member-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .member-card {
+            background-color: #0a1c3b;
+            width: 250px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .member-photo img {
+            width: 100%;
+            border-radius: 10px;
+            border: 3px solid #ffd700;
+        }
+
+        .member-info {
+            margin-top: 10px;
+        }
+
+        .member-info h3 {
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+
+        .member-info p {
+            background-color: #ffcc00;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function playSound() {
+            var audio = new Audio('click-sound.mp3');
+            audio.play();
+        }
+
+        function showClub(clubPage) {
+            playSound();
+            window.location.href = clubPage;
+        }
+    </script>
+</head>
+<body>
+    <img src="c:\Users\IPS\Desktop\TOUT\Logo.png" alt="شعار الجمعية" class="logo">
+    <h1>جمعية أسود توكر والماس</h1>
+
+    <div class="container">
+        <div class="club" onclick="showClub('it.html')">نادي المعلوميات</div>
+        <div class="club" onclick="showClub('theater.html')">نادي المسرح</div>
+        <div class="club" onclick="showClub('dance.html')">نادي الرقص</div>
+        <div class="club" onclick="showClub('reading.html')">نادي القراءة</div>
+        <div class="club" onclick="showClub('chess.html')">نادي السطرنج</div>
+    </div>
+
+    <!-- قسم الأعضاء -->
+    <div class="members">
+        <h2>الأعضاء</h2>
+        <div class="member-container">
+            <!-- أعضاء الجمعية -->
+            <!-- عضو 1 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="c:\Users\IPS\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\TempState\3C59DC048E8850243BE8079A5C74D079\WhatsApp Image 2025-02-26 à 14.32.25_b07b0b18.jpg" alt="عضو 1">
+                </div>
+                <div class="member-info">
+                    <h3> </h3>
+                    <p>رئيس الجمعية </p>
+                </div>
+            </div>
+            <!-- عضو 2 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="c:\Users\IPS\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\TempState\4E732CED3463D06DE0CA9A15B6153677\WhatsApp Image 2025-02-26 à 14.32.33_d302c777.jpg" alt="عضو 2">
+                </div>
+                <div class="member-info">
+                    <h3></h3>
+                    <p> نائب الرئيس</p>
+                </div>
+            </div>
+            <!-- عضو 3 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="c:\Users\IPS\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\TempState\182BE0C5CDCD5072BB1864CDEE4D3D6E\WhatsApp Image 2025-02-26 à 14.32.45_78511a44.jpg" alt="عضو 3">
+                </div>
+                <div class="member-info">
+                    <h3> </h3>
+                    <p>التواصل  </p>
+                </div>
+            </div>
+            <!-- عضو 4 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="c:\Users\IPS\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\TempState\34173CB38F07F89DDBEBC2AC9128303F\WhatsApp Image 2025-02-26 à 14.32.43_acd8821f.jpg" alt="عضو 4">
+                </div>
+                <div class="member-info">
+                    <h3> </h3>
+                    <p>امين المال </p>
+                </div>
+            </div>
+            <!-- عضو 5 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="c:\Users\IPS\AppData\Local\Packages\5319275A.51895FA4EA97F_cv1g1gvanyjgm\TempState\C74D97B01EAE257E44AA9D5BADE97BAF\WhatsApp Image 2025-02-26 à 14.32.18_b37a5806.jpg" alt="عضو 5">
+                </div>
+                <div class="member-info">
+                    <h3> </h3>
+                    <p>نائب امين المال </p>
+                </div>
+            </div>
+            <!-- إضافة الأعضاء من 6 إلى 27 -->
+            <!-- عضو 6 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image1.jpg" alt="عضو 6">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 6</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- عضو 7 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image2.jpg" alt="عضو 7">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 7</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- عضو 8 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image3.jpg" alt="عضو 8">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 8</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- عضو 9 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image4.jpg" alt="عضو 9">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 9</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- عضو 10 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image5.jpg" alt="عضو 10">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 10</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- أعضاء 11 إلى 27 -->
+            <!-- مثال: -->
+            <!-- عضو 11 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image1.jpg" alt="عضو 11">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 11</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- عضو 12 -->
+            <div class="member-card">
+                <div class="member-photo">
+                    <img src="path_to_image2.jpg" alt="عضو 12">
+                </div>
+                <div class="member-info">
+                    <h3>عضو 12</h3>
+                    <p>لجنة التنظيم</p>
+                </div>
+            </div>
+            <!-- استمر بنفس الطريقة حتى العضو 27 -->
+        </div>
+    </div>
+</body>
+</html>
